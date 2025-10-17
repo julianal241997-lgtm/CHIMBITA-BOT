@@ -1,9 +1,0 @@
-services:
-  - type: cron
-    name: chimbita-bot
-    env: python
-    plan: starter
-    schedule: "0 */2 * * *"
-    buildCommand: ""
-    startCommand: "python scan_once.py"
-    pythonVersion: 3.11
