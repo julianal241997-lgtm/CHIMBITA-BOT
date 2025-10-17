@@ -1,0 +1,14 @@
+services:
+  - type: cron
+    name: binance-perp-scanner
+    env: python
+    plan: starter
+    pythonVersion: 3.11
+    buildCommand: pip install -r requirements.txt
+    startCommand: python scan_once.py
+    schedule: "0 */2 * * *"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "8331474411:AAG5wW_4m7KuBUdQ8nNi8L1gntx0NN2RUwU"
+      - key: CHAT_ID
+        value: "1982879600"
