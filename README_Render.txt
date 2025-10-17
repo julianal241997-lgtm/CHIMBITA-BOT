@@ -1,1 +1,0 @@
-Render deployment: Binance perpetuals scanner bot running every 2h via cron job.
